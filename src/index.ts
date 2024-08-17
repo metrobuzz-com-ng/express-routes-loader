@@ -14,7 +14,7 @@ import {
 import { RouteHandler, RouteLoaderOptions } from "./types";
 import { HttpStatusCode, i18ns } from "./constants";
 
-export default async (
+const routeLoader = async (
   routeFolderName: string,
   app: Express,
   options: RouteLoaderOptions = {},
@@ -94,3 +94,9 @@ export default async (
     logger(i18ns.LOGS.GENERAL.FN.LOADED_ROUTES(elapsedTime));
   }
 };
+
+export default routeLoader;
+
+export * from "./validators";
+export * from "./utils";
+export * from "./constants";

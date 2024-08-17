@@ -1,4 +1,4 @@
-import { RouteHandler } from "@types";
+import { RouteHandler } from "../types";
 import isRouteHandler from "./isRouteHandler";
 
 export default (arr: RouteHandler[]): arr is RouteHandler[] => {
