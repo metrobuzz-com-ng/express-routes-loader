@@ -2,7 +2,7 @@
   "name": "@metrobuzz/express-routes-loader",
   "version": "0.0.1",
   "description": "This module provides a flexible way to load and register routes in an Express application from a specified folder.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest --config jest.config.js",
     "deploy": "npm run build && npm publish",
@@ -16,7 +16,16 @@
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
   },
-  "keywords": [],
+  "keywords": [
+    "routes-loader",
+    "metrobuzz",
+    "metro",
+    "express-routes-loader",
+    "express",
+    "express-routes",
+    "routes",
+    "loader"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
