@@ -40,5 +40,18 @@
     "prettier": "3.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{json,md,yaml,yml,js,jsx}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
